@@ -1,0 +1,27 @@
+city: Delhi
+scenario: Dussehra
+riders:
+  count: 3
+  start: [0.0, 0.0]
+orders:
+  ready_min_mu: 10
+  ready_min_sigma: 5
+  sla_min_low: 45
+  sla_min_high: 70
+zones:
+  - name: fairground_1
+    center: [0, 5]
+    radius_km: 2.0
+    multiplier: 1.35
+    active_min: [1080, 1320]   # 18:00–22:00
+  - name: fairground_2
+    center: [4, 3]
+    radius_km: 2.0
+    multiplier: 1.35
+    active_min: [1080, 1320]
+  - name: ring_road_belt
+    center: [0, 0]
+    radius_km: 999.0
+    multiplier: 1.15
+    active_min: [1080, 1320]
+    band: [4.0, 6.0]          

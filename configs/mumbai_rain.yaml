@@ -1,0 +1,26 @@
+city: Mumbai
+scenario: Monsoon
+riders:
+  count: 3
+  start: [0.0, 0.0]
+orders:
+  ready_min_mu: 10
+  ready_min_sigma: 5
+  sla_min_low: 45
+  sla_min_high: 70
+zones:
+  - name: citywide_rain
+    center: [0, 0]
+    radius_km: 999.0
+    multiplier: 1.25
+    active_min: [0, 1440]
+  - name: waterlogging_pocket_1
+    center: [3, -3]
+    radius_km: 2.0
+    multiplier: 1.35
+    active_min: [0, 1440]
+  - name: waterlogging_pocket_2
+    center: [-4, -2]
+    radius_km: 2.0
+    multiplier: 1.35
+    active_min: [0, 1440]

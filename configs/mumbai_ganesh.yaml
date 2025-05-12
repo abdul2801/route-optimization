@@ -1,0 +1,26 @@
+city: Mumbai
+scenario: Ganesh Chaturthi
+riders:
+  count: 3
+  start: [0.0, 0.0]
+orders:
+  ready_min_mu: 10
+  ready_min_sigma: 5
+  sla_min_low: 45
+  sla_min_high: 70
+zones:
+  - name: procession_1
+    center: [0, 5]
+    radius_km: 2.0
+    multiplier: 1.5
+    active_min: [1020, 1320]   # 17:00–22:00
+  - name: procession_2
+    center: [-3, 4]
+    radius_km: 2.0
+    multiplier: 1.5
+    active_min: [1020, 1320]
+  - name: evening_peak
+    center: [0, 0]
+    radius_km: 999.0
+    multiplier: 1.25
+    active_min: [1020, 1320]
